@@ -3,7 +3,7 @@ import './searchBar-Style.css';
 
 import axios from 'axios';
 function SearchBar(props) {
-    const API_KEY = 'AIzaSyABskby34aGFxCmMlzoXo_SP802Q7qTIYs'
+    const API_KEY = process.env.REACT_APP_API_KEY
 
     const searchBusinesses = (e) => {
         props.setIsloading(true);
